@@ -1,4 +1,24 @@
 <div class="content">
-  <app-waiver-text></app-waiver-text>
-  <app-waiver-signature></app-waiver-signature>
+  <mat-card style="width: 600px; margin: 10px auto;">
+    <mat-card-content>
+    <h1>Welcome to Maker Cube!</h1>
+    <h3> Please read the waiver below, and complete your information and signature at the bottom. Then review and hit the submit waiver button. Thanks!</h3>
+  </mat-card-content>
+  </mat-card>
+
+  <app-waiver-text
+    [signature] = "signatureMain"
+    [firstName] = "firstNameMain"
+    [lastName] = "lastNameMain"
+  ></app-waiver-text>
+
+  <app-waiver-inputs
+    (firstNameSend)="firstNameRecieve($event)"
+    (lastNameSend)="lastNameRecieve($event)"
+  ></app-waiver-inputs>
+
+  <app-waiver-signature
+    (doneSigSend)="doneSigRecieve($event)"
+  ></app-waiver-signature>
+  
 </div>

@@ -1,17 +1,17 @@
 
-.divToPrint{
-	width: 297mm !important;
+#divToPrint{
+	width: 210mm !important;
+	height: 297mm !important;
 	margin: auto;
 	background-color: white;
   border: 2px solid #888888;
-  padding: 5px;
+  padding: 15px;
 }
 
 .waiver{
-		max-width: 267mm;
-		max-height: 180mm;
-		width: 267mm !important;
-  height: 180mm !important;
+		max-height: 267mm;
+		max-width: 180mm;
+	
   padding: 15mm;
   margin: auto ;
   background-color: white;

@@ -1,0 +1,7 @@
+signature-pad {
+  padding: 0;
+    margin: auto;
+    display: flex;
+    width: 550px; /*Match the canvas size from the TS file*/
+  
+}

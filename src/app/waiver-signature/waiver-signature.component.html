@@ -1,1 +1,13 @@
-<p>waiver-signature works!</p>
+<mat-card style="width: 600px; margin: auto; margin-top: 10px;">
+	<mat-card-content>
+		<div style="display: flex; justify-content: space-between; align-items: center;">
+Enter signature below, and it will appear on the above waiver
+<button mat-raised-button color="warn" style=" margin-bottom: 10px;" (click)="clearSignature()">Clear Signature</button>
+</div>
+<signature-pad #signature
+	[options]="signaturePadOptions" 
+	(drawStart)="drawStart($event)"
+	(drawEnd)="drawComplete($event)">
+</signature-pad>
+</mat-card-content>
+</mat-card>
