@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'signin-waiver-new';
+  title = 'Waiver - Maker Cube';
   signatureMain: string;
   firstNameMain: string;
   lastNameMain: string;

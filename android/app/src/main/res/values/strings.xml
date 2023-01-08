@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">signin-waiver-new</string>
+    <string name="title_activity_main">signin-waiver-new</string>
+    <string name="package_name">com.makercubewaiver.app</string>
+    <string name="custom_url_scheme">com.makercubewaiver.app</string>
+</resources>

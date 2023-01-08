@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { WaiverTextComponent } from './waiver-text/waiver-text.component';
 import { WaiverSignatureComponent } from './waiver-signature/waiver-signature.component';
@@ -28,7 +27,6 @@ import { AngularSignaturePadModule } from '@almothafar/angular-signature-pad';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
     MatFormFieldModule,
     MatInputModule,
     MatCardModule,

@@ -6,13 +6,14 @@
 	background-color: white;
   border: 2px solid #888888;
   padding: 15px;
+  max-width: 95%;
 }
 
 .waiver{
 		max-height: 267mm;
 		max-width: 180mm;
 	
-  padding: 15mm;
+  padding: 5mm 15mm;
   margin: auto ;
   background-color: white;
   border-top: 5px solid black;
