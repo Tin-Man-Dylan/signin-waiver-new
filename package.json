@@ -24,6 +24,7 @@
     "@capacitor/android": "^4.6.1",
     "@capacitor/angular": "^2.0.3",
     "@capacitor/core": "latest",
+    "@capacitor/filesystem": "^4.1.4",
     "html2canvas": "^1.4.1",
     "jspdf": "^2.5.1",
     "moment": "^2.29.4",
