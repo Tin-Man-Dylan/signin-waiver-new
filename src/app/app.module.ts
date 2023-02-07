@@ -16,6 +16,11 @@ import {MatButtonModule} from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 
 import { AngularSignaturePadModule } from '@almothafar/angular-signature-pad';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 
 @NgModule({
   declarations: [
@@ -32,7 +37,11 @@ import { AngularSignaturePadModule } from '@almothafar/angular-signature-pad';
     MatCardModule,
     MatButtonModule,
     FormsModule,
-    AngularSignaturePadModule
+    AngularSignaturePadModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage()),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireStorageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
